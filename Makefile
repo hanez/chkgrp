@@ -4,6 +4,7 @@ all:
 	$(CC) -Wall -o ./chkgrp-native ./chkgrp-native.c
 	$(CC) -Wall -o ./chkgrp-native-min ./chkgrp-native-min.c
 	$(CC) -Wall -o ./chkgrp-native-min-extended ./chkgrp-native-min-extended.c
+	$(CC) -Wall -o ./chkgrp-ng ./chkgrp-ng.c
 
 clean:
 	rm -f ./chkgrp
@@ -11,6 +12,7 @@ clean:
 	rm -f ./chkgrp-native
 	rm -f ./chkgrp-native-min
 	rm -f ./chkgrp-native-min-extended
+	rm -f ./chkgrp-ng
 
 install:
 	install -g 0 -o 0 -m 0655 ./chkgrp /usr/bin/
@@ -18,6 +20,7 @@ install:
 	install -g 0 -o 0 -m 0655 ./chkgrp-native /usr/bin/
 	install -g 0 -o 0 -m 0655 ./chkgrp-native-min /usr/bin/
 	install -g 0 -o 0 -m 0655 ./chkgrp-native-min-extended /usr/bin/
+	install -g 0 -o 0 -m 0655 ./chkgrp-ng /usr/bin/
 	install -g 0 -o 0 -m 0655 ./lua/chkgrp-native-min-extended.lua /usr/bin/
 
 uninstall:
@@ -27,4 +30,5 @@ uninstall:
 	rm -f /usr/bin/chkgrp-native-min
 	rm -f /usr/bin/chkgrp-native-min-extended
 	rm -f /usr/bin/chkgrp-native-min-extended.lua
+	rm -f /usr/bin/chkgrp-ng
 
