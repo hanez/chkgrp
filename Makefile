@@ -18,6 +18,7 @@ install:
 	install -g 0 -o 0 -m 0655 ./chkgrp-native /usr/bin/
 	install -g 0 -o 0 -m 0655 ./chkgrp-native-min /usr/bin/
 	install -g 0 -o 0 -m 0655 ./chkgrp-native-min-extended /usr/bin/
+	install -g 0 -o 0 -m 0655 ./lua/chkgrp-native-min-extended.lua /usr/bin/
 
 uninstall:
 	rm -f /usr/bin/chkgrp
@@ -25,4 +26,5 @@ uninstall:
 	rm -f /usr/bin/chkgrp-native
 	rm -f /usr/bin/chkgrp-native-min
 	rm -f /usr/bin/chkgrp-native-min-extended
+	rm -f /usr/bin/chkgrp-native-min-extended.lua
 
